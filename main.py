@@ -1,4 +1,4 @@
-from SpringArray import SpringArray
+from spring_array import SpringArray
 from converter import Converter
 
 if __name__ == '__main__':

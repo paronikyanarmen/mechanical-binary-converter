@@ -3,7 +3,7 @@ from collections import namedtuple
 import numpy as np
 
 from scipy import fft
-from SpringArray import SpringArray
+from spring_array import SpringArray
 from spring import Spring
 
 
