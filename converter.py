@@ -19,12 +19,14 @@ class Converter:
 
     def set_spring_from_binary(self, byte):
         springs = []
+        spring_expression = '['
         for index, bit in enumerate(byte):
             if bit == '1':
                 stiffness = 2 ** (8 - 1 - index)
                 springs.append(Spring(k=stiffness))
+                spring_expression += '{}'
 
-        spring_expression = 'armen'
+        spring_expression += ']'
 
         self.spring = self.spring_array.equivalent_spring(spring_expression, springs)
 
